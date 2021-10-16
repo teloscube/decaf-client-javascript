@@ -1,0 +1,1 @@
+{"version":3,"file":"index.umd.js","sources":["../src/index.ts"],"sourcesContent":["type Props = {\n  name: string;\n};\n\nexport function sayHi(props: Props) {\n  return `Hi, ${props.name}`;\n}\n"],"names":["props","name"],"mappings":"gQAIsBA,GACpB,aAAcA,EAAMC"}
