@@ -1,7 +1,7 @@
 {
   "name": "decaf-client-javascript",
-  "version": "0.0.1",
-  "description": "DECAF API Javascript Client",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "DECAF API Client for Javascript/Typescript",
   "repository": "git@github.com:teloscube/decaf-client-javascript.git",
   "author": "alioguzhan <aoguzhanyildiz@gmail.com>",
   "license": "SEE LICENSE In LICENSE.md",
