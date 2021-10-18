@@ -1,5 +1,5 @@
 {
-  "name": "decaf-client-javascript",
+  "name": "decaf-client",
   "version": "0.0.1-SNAPSHOT",
   "description": "DECAF API Client for Javascript/Typescript",
   "repository": "git@github.com:teloscube/decaf-client-javascript.git",
@@ -11,6 +11,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
+  "types": "dist/index.d.ts",
   "private": true,
   "scripts": {
     "dev": "microbundle watch",
