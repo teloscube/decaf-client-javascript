@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/teloscube/decaf-client-javascript/compare/v0.0.3...v0.0.4) (2021-11-25)
+
+
+### Bug Fixes
+
+* remove modern.js build ([3d96bb1](https://github.com/teloscube/decaf-client-javascript/commit/3d96bb1adc4e6b56e1188091db49bad7ae0f72e2))
+
 ### [0.0.3](https://github.com/teloscube/decaf-client-javascript/compare/v0.0.2...v0.0.3) (2021-11-25)
 
 
