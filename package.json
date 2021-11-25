@@ -1,6 +1,6 @@
 {
   "name": "@decafhub/decaf-client",
-  "version": "0.0.2",
+  "version": "0.0.3-SNAPSHOT",
   "description": "DECAF API Client for Javascript/Typescript",
   "repository": "teloscube/decaf-client-javascript",
   "author": "alioguzhan <aoguzhanyildiz@gmail.com>",
