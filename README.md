@@ -1,4 +1,4 @@
-# DECAF API Client (Javascript / Typescript)
+# DECAF API Javascript Client
 
 > Javascript client for the DECAF.
 
