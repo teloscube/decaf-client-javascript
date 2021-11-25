@@ -1,13 +1,12 @@
 {
   "name": "@decafhub/decaf-client",
-  "version": "0.0.4",
+  "version": "0.0.5-SNAPSHOT",
   "description": "DECAF API Client for Javascript/Typescript",
   "repository": "teloscube/decaf-client-javascript",
   "author": "alioguzhan <aoguzhanyildiz@gmail.com>",
   "license": "MIT",
   "type": "module",
   "source": "src/index.ts",
-  "exports": "./dist/index.cjs",
   "main": "./dist/index.cjs",
   "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
@@ -22,7 +21,7 @@
     "@apollo/client": "~3.4",
     "axios": "^0.24.0",
     "cross-fetch": "^3.1.4",
-    "graphql": "^16.0.1",
+    "graphql": "~15",
     "qs": "^6.10.1"
   },
   "devDependencies": {
