@@ -1,4 +1,24 @@
-# DECAF API Client (Javascript)
+# DECAF API Client (Javascript / Typescript)
+
+> Javascript client for the DECAF.
+
+![npm](https://img.shields.io/npm/v/@decafhub/decaf-client)
+![github last commit](https://img.shields.io/github/last-commit/teloscube/decaf-client-javascript)
+![GitHub](https://img.shields.io/github/license/teloscube/decaf-client-javascript)
+
+
+## Installation
+
+Install with `yarn`:
+
+```
+yarn add @decafhub/decaf-client
+```
+or with `npm`:
+
+```
+npm install @decafhub/decaf-client
+```
 
 ## Development
 
