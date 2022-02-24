@@ -30,5 +30,6 @@ export function buildDecafClient(remote: Remote, credentials: Credentials): Deca
 }
 
 // Export additional symbols:
+export { gql } from 'graphql-tag';
 export { BasicCredentials, KeyCredentials, TokenCredentials } from './-auth';
 export { Remote, Credentials, BaristaClient, MicrolotClient };

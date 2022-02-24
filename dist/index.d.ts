@@ -19,5 +19,6 @@ export interface DecafClient {
  * @param credentials DECAF authentication credentials.
  */
 export declare function buildDecafClient(remote: Remote, credentials: Credentials): DecafClient;
+export { gql } from 'graphql-tag';
 export { BasicCredentials, KeyCredentials, TokenCredentials } from './-auth';
 export { Remote, Credentials, BaristaClient, MicrolotClient };
