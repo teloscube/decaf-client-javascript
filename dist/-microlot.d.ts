@@ -1,7 +1,7 @@
 /**
  * This module provides internal definitions for the remote DECAF Microlot API client.
  */
-import { ApolloClient, NormalizedCacheObject } from '@apollo/client';
+import { ApolloClient, NormalizedCacheObject } from '@apollo/client/core';
 import { Credentials } from './-auth';
 import { Remote } from './-commons';
 /**
