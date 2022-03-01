@@ -2,7 +2,7 @@
  * This module provides internal definitions for the remote DECAF Microlot API client.
  */
 
-import { ApolloClient, HttpLink, InMemoryCache, NormalizedCacheObject } from '@apollo/client/core';
+import { ApolloClient, HttpLink, InMemoryCache, NormalizedCacheObject } from '@apollo/client';
 import fetch from 'cross-fetch';
 import { Credentials, getAuthorizationHeader } from './-auth';
 import { Remote } from './-commons';
