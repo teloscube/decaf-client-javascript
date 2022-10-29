@@ -27,7 +27,8 @@ export function buildBareClient(remote: Remote, credentials: Credentials): BareC
       'Content-Type': 'application/json',
       ...getAuthorizationHeader(credentials),
     },
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    paramsSerializer: (params: any) => Qs.stringify(params, { arrayFormat: 'repeat' }),
+    paramsSerializer: {
+      serialize: (params) => Qs.stringify(params, { arrayFormat: 'repeat' }),
+    },
   });
 }
