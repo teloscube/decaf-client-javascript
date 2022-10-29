@@ -73,10 +73,10 @@ export function getAuthorizationHeader(auth: Credentials): { Authorization: stri
   } else if (isKeyCredentials(auth)) {
     return { Authorization: `Key ${auth.key}:${auth.secret}` };
   } else if (isBasicCredentials(auth)) {
-    if (typeof Buffer === 'undefined') {
-      throw Error('Buffer is undefined. Are you in node environment?');
+    if (typeof window.btoa === 'undefined') {
+      throw Error('btoa is undefined. Are you in node environment?');
     }
-    return { Authorization: `Basic ${Buffer.from(auth.username + ':' + auth.password).toString('base64')}` };
+    return { Authorization: `Basic ${window.btoa(auth.username + ':' + auth.password)}` };
   }
   throw new Error('Unkown DECAF API credentials type');
 }
