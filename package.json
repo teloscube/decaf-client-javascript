@@ -11,6 +11,9 @@
   "unpkg": "./dist/index.umd.js",
   "types": "dist/index.d.ts",
   "private": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "microbundle watch",
     "build": "microbundle",
