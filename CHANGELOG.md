@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [0.3.1](https://github.com/teloscube/decaf-client-javascript/compare/v0.3.0...v0.3.1) (2022-11-07)
+
+
+### Bug Fixes
+
+* dist folder is not included in 0.3.0 ([1b01d0a](https://github.com/teloscube/decaf-client-javascript/commit/1b01d0af7bb148ef683b9b5112d8805a74f07a29))
+
 ## [0.3.0](https://github.com/teloscube/decaf-client-javascript/compare/v0.2.2...v0.3.0) (2022-10-31)
 
 
