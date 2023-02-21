@@ -1,4 +1,3 @@
-import gql from 'graphql-tag';
 import {
   BasicCredentials,
   getAuthorizationHeader,
@@ -9,7 +8,7 @@ import {
   TokenCredentials,
 } from './-auth';
 
-import { buildDecafClient, DecafClient } from './index';
+import { buildDecafClient, DecafClient, gql } from './index';
 
 describe('Credentials', () => {
   let credBasic: BasicCredentials;
