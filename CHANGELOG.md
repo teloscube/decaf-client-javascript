@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [0.3.2](https://github.com/teloscube/decaf-client-javascript/compare/v0.3.1...v0.3.2) (2023-04-02)
+
+
+### Miscellaneous Chores
+
+* release 0.3.2 ([740db08](https://github.com/teloscube/decaf-client-javascript/commit/740db08e48f10ae8dae9820e311ea74da5b21416))
+
 ## [0.3.1](https://github.com/teloscube/decaf-client-javascript/compare/v0.3.0...v0.3.1) (2022-11-07)
 
 
