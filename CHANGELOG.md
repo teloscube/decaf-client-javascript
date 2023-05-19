@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [0.4.0](https://github.com/teloscube/decaf-client-javascript/compare/v0.3.2...v0.4.0) (2023-05-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* make minimum supported node version 16
+
+### Bug Fixes
+
+* github actions and commit hooks still have yarn ([5713f3b](https://github.com/teloscube/decaf-client-javascript/commit/5713f3bce6c526b241eaf12cffa5b47b41d95f61))
+
+
+### Miscellaneous Chores
+
+* make minimum supported node version 16 ([9b54a48](https://github.com/teloscube/decaf-client-javascript/commit/9b54a48e90dc30a7abf7415670d2f9761aeb38d7))
+
 ## [0.3.2](https://github.com/teloscube/decaf-client-javascript/compare/v0.3.1...v0.3.2) (2023-04-02)
 
 
