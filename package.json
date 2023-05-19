@@ -21,7 +21,7 @@
     "dev": "microbundle watch",
     "build": "microbundle",
     "test": "jest",
-    "prepare": "yarn build && husky install"
+    "prepare": "npm run build && husky install"
   },
   "dependencies": {
     "@apollo/client": "^3.7.14",
