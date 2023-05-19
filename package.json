@@ -14,6 +14,9 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "dev": "microbundle watch",
     "build": "microbundle",
