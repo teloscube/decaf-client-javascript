@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [0.4.1](https://github.com/teloscube/decaf-client-javascript/compare/v0.4.0...v0.4.1) (2023-07-05)
+
+
+### Features
+
+* add header authentication support ([8f8426f](https://github.com/teloscube/decaf-client-javascript/commit/8f8426f79af0433a4189a0f45d292e42c6602325))
+
 ## [0.4.0](https://github.com/teloscube/decaf-client-javascript/compare/v0.3.2...v0.4.0) (2023-05-19)
 
 
