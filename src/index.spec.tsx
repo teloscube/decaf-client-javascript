@@ -1,7 +1,9 @@
 import {
   BasicCredentials,
   getAuthorizationHeader,
+  HeaderCredentials,
   isBasicCredentials,
+  isHeaderCredentials,
   isKeyCredentials,
   isTokenCredentials,
   KeyCredentials,
@@ -14,10 +16,12 @@ describe('Credentials', () => {
   let credBasic: BasicCredentials;
   let credKey: KeyCredentials;
   let credToken: TokenCredentials;
+  let credHeader: HeaderCredentials;
   beforeEach(() => {
     credBasic = { username: 'test', password: 'xxx' };
     credKey = { key: 'credKey', secret: 'credSecret' };
     credToken = { token: 'sometoken' };
+    credHeader = { value: 'someheader' };
   });
   test('isBasicCredentials', () => {
     const test = isBasicCredentials(credBasic);
@@ -31,6 +35,10 @@ describe('Credentials', () => {
     const test = isTokenCredentials(credToken);
     expect(test).toBeTruthy();
   });
+  test('isHeaderCredentials', () => {
+    const test = isHeaderCredentials(credHeader);
+    expect(test).toBeTruthy();
+  });
   test('getAuthorizationHeader', () => {
     const testBasic = getAuthorizationHeader(credBasic);
     expect(testBasic).toStrictEqual({ Authorization: `Basic dGVzdDp4eHg=` });
@@ -40,6 +48,9 @@ describe('Credentials', () => {
 
     const testToken = getAuthorizationHeader(credToken);
     expect(testToken).toStrictEqual({ Authorization: `Token sometoken` });
+
+    const testHeader = getAuthorizationHeader(credHeader);
+    expect(testHeader).toStrictEqual({ Authorization: `someheader` });
   });
 });
 

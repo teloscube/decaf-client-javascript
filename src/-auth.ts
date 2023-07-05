@@ -5,7 +5,7 @@
 /**
  * Available DECAF authentication credentials.
  */
-export type Credentials = BasicCredentials | KeyCredentials | TokenCredentials;
+export type Credentials = BasicCredentials | KeyCredentials | TokenCredentials | HeaderCredentials;
 
 /**
  * DECAF "HTTP Basic Authentication" credentials.
@@ -28,6 +28,13 @@ export interface KeyCredentials {
  */
 export interface TokenCredentials {
   token: string;
+}
+
+/**
+ * DECAF "Header Authentication" credentials.
+ */
+export interface HeaderCredentials {
+  value: string;
 }
 
 /**
@@ -61,6 +68,15 @@ export function isTokenCredentials(object: Credentials): object is TokenCredenti
 }
 
 /**
+ * Type predicate function for [[HeaderCredentials]] instances.
+ * @param object object to check.
+ * @return Type predicate marking the object as an instance of [[HeaderCredentials]].
+ */
+export function isHeaderCredentials(object: Credentials): object is HeaderCredentials {
+  return 'value' in object;
+}
+
+/**
  * Builds HTTPP Authorization header for the given [[Credentials]] instance.
  *
  * @param auth Credentials.
@@ -72,6 +88,8 @@ export function getAuthorizationHeader(auth: Credentials): { Authorization: stri
     return { Authorization: `Token ${auth.token}` };
   } else if (isKeyCredentials(auth)) {
     return { Authorization: `Key ${auth.key}:${auth.secret}` };
+  } else if (isHeaderCredentials(auth)) {
+    return { Authorization: auth.value };
   } else if (isBasicCredentials(auth)) {
     if (typeof window.btoa === 'undefined') {
       throw Error('btoa is undefined. Are you in node environment?');
