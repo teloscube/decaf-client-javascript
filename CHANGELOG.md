@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [0.4.2](https://github.com/teloscube/decaf-client-javascript/compare/v0.4.1...v0.4.2) (2023-10-10)
+
+
+### Features
+
+* export all from auth module ([53024cd](https://github.com/teloscube/decaf-client-javascript/commit/53024cd4077fa588da075242e1841d35128de613))
+
 ## [0.4.1](https://github.com/teloscube/decaf-client-javascript/compare/v0.4.0...v0.4.1) (2023-07-05)
 
 
