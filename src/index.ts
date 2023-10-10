@@ -2,7 +2,7 @@ import { Credentials } from './-auth';
 import { BareClient, buildBareClient } from './-bare';
 import { BaristaClient, buildBaristaClient } from './-barista';
 import { Remote } from './-commons';
-import { buildMicrolotClient, MicrolotClient } from './-microlot';
+import { MicrolotClient, buildMicrolotClient } from './-microlot';
 
 /**
  * Type definition for remote DECAF API clients.
@@ -31,5 +31,5 @@ export function buildDecafClient(remote: Remote, credentials: Credentials): Deca
 
 // Export additional symbols:
 export { gql } from '@apollo/client/core';
-export { BasicCredentials, KeyCredentials, TokenCredentials } from './-auth';
-export { Remote, Credentials, BaristaClient, MicrolotClient };
+export * from './-auth';
+export { BaristaClient, MicrolotClient, Remote };
