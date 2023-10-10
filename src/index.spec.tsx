@@ -1,6 +1,9 @@
 import {
   BasicCredentials,
+  buildDecafClient,
+  DecafClient,
   getAuthorizationHeader,
+  gql,
   HeaderCredentials,
   isBasicCredentials,
   isHeaderCredentials,
@@ -8,9 +11,7 @@ import {
   isTokenCredentials,
   KeyCredentials,
   TokenCredentials,
-} from './-auth';
-
-import { buildDecafClient, DecafClient, gql } from './index';
+} from './index';
 
 describe('Credentials', () => {
   let credBasic: BasicCredentials;
