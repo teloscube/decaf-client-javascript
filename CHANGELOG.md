@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [0.5.1](https://github.com/teloscube/decaf-client-javascript/compare/v0.5.0...v0.5.1) (2024-09-04)
+
+
+### Miscellaneous Chores
+
+* upgrade dependencies ([c878c60](https://github.com/teloscube/decaf-client-javascript/commit/c878c6034df7801265d5da9c297ad94d3ab03e5a))
+
 ## [0.5.0](https://github.com/teloscube/decaf-client-javascript/compare/v0.4.2...v0.5.0) (2023-12-04)
 
 
