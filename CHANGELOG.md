@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [0.6.0](https://github.com/teloscube/decaf-client-javascript/compare/v0.5.1...v0.6.0) (2024-12-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* stop testing for Node 21. This is not a breaking change yet we want to make sure to not break anything. Supported Node versions are now 18, 20, and 22
+
+### Miscellaneous Chores
+
+* update node versions for testing ([90c1a0b](https://github.com/teloscube/decaf-client-javascript/commit/90c1a0b0c7e40153d911b4aae577ca1f2f390ee1))
+
 ## [0.5.1](https://github.com/teloscube/decaf-client-javascript/compare/v0.5.0...v0.5.1) (2024-09-04)
 
 
