@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [0.8.0](https://github.com/teloscube/decaf-client-javascript/compare/v0.7.0...v0.8.0) (2025-12-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ci:** drop node 20 support. Minimum supported node version is now 22
+
+### Miscellaneous Chores
+
+* **ci:** upgrade the minimum node version ([98b6520](https://github.com/teloscube/decaf-client-javascript/commit/98b65209f33c20a20ee4b5ad1f1a87aa1baf8bf6))
+
 ## [0.7.0](https://github.com/teloscube/decaf-client-javascript/compare/v0.6.0...v0.7.0) (2025-04-28)
 
 
