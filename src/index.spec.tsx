@@ -84,7 +84,7 @@ describe('Decaf Clients', () => {
     expect(data.username).toBeTruthy();
   });
   test('microlot client', async () => {
-    const { data } = await client.microlot.query({
+    const { data } = await client.microlot.query<{ portfolio: { id: number } }>({
       query: gql`
         query {
           portfolio {
@@ -93,6 +93,6 @@ describe('Decaf Clients', () => {
         }
       `,
     });
-    expect(data.portfolio).toBeTruthy();
+    expect(data?.portfolio).toBeTruthy();
   });
 });

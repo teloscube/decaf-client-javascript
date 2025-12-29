@@ -1,8 +1,5 @@
-/**
- * This module provides internal definitions for the remote DECAF Microlot API client.
- */
-
-import { ApolloClient, HttpLink, InMemoryCache, NormalizedCacheObject } from '@apollo/client/core';
+import { ApolloClient, HttpLink, InMemoryCache } from '@apollo/client';
+import { LocalState } from '@apollo/client/local-state';
 import fetch from 'cross-fetch';
 import { Credentials, getAuthorizationHeader } from './-auth';
 import { Remote } from './-commons';
@@ -10,7 +7,7 @@ import { Remote } from './-commons';
 /**
  * Defines the DECAF Microlot API client as a type alias to [[AxiosInstance]].
  */
-export type MicrolotClient = ApolloClient<NormalizedCacheObject>;
+export type MicrolotClient = ApolloClient;
 
 /**
  * Builds a DECAF Microrlot API client.
@@ -26,7 +23,9 @@ export function buildMicrolotClient(remote: Remote, credentials: Credentials): M
       fetch,
       headers: getAuthorizationHeader(credentials),
     }),
+
     cache: new InMemoryCache(),
+
     defaultOptions: {
       watchQuery: {
         fetchPolicy: 'no-cache',
@@ -37,5 +36,7 @@ export function buildMicrolotClient(remote: Remote, credentials: Credentials): M
         errorPolicy: 'all',
       },
     },
+
+    localState: new LocalState({}),
   });
 }
