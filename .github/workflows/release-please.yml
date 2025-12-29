@@ -3,6 +3,10 @@ on:
     branches:
       - main
 
+permissions:
+  id-token: write  # Required for OIDC
+  contents: read
+
 name: release-please
 jobs:
   release-please:
@@ -35,6 +39,4 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
 
       - run: npm publish --access=public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.DECAFHUB_NPM_TOKEN}}
         if: ${{ steps.release.outputs.release_created }}
